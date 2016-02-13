@@ -7,12 +7,15 @@ public class ConveyorBelt : MonoBehaviour
 
 	void OnCollisionStay(Collision collision) 
 	{
-		// Assign velocity based upon direction of conveyor belt
-		// Ensure that conveyor mesh is facing towards its local Z-axis		
-		float conveyorVelocity = speed * Time.deltaTime;
-	
-		Rigidbody rigidbody = collision.gameObject.GetComponent<Rigidbody>();
-		rigidbody.velocity = conveyorVelocity * transform.forward;
+		if(speed > 0)
+		{
+			// Assign velocity based upon direction of conveyor belt
+			// Ensure that conveyor mesh is facing towards its local Z-axis		
+			float conveyorVelocity = speed * Time.deltaTime;
+		
+			Rigidbody rigidbody = collision.gameObject.GetComponent<Rigidbody>();
+			rigidbody.velocity = conveyorVelocity * transform.forward;
+		}
 	}
 }
 

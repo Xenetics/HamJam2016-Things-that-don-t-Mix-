@@ -15,7 +15,9 @@ public class Blast : MonoBehaviour
             //if (!hit)
             if (hit.GetComponent<Rigidbody>())
 			{
-            	hit.GetComponent<Rigidbody>().AddExplosionForce(magnitude, explosionPos, radius,0);
+				Rigidbody body = hit.GetComponent<Rigidbody>();
+				body.constraints = RigidbodyConstraints.None;
+            	body.AddExplosionForce(magnitude, explosionPos, radius,0);
 			}
         }
     }

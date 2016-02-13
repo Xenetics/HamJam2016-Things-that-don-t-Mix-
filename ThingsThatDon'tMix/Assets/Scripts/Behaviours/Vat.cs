@@ -7,6 +7,7 @@ public class Vat : MonoBehaviour
 	public float fluidHeight = 5;
 	public float maxFluid = 10;
 	public Blast blastObject;
+	public ConveyorBelt[] conveyors;
 
 	// Use this for initialization
 	void Start () 
@@ -28,6 +29,10 @@ public class Vat : MonoBehaviour
 
 		if(fluidHeight > maxFluid)
 		{
+			for(int i=0; i<conveyors.Length; i++)
+			{
+				conveyors[i].speed = 0;
+			}
 			blastObject.Explode();
 		}
 	}

@@ -1,0 +1,513 @@
+fileFormatVersion: 2
+guid: db289691a42b6de43807d11a0a5d7537
+timeCreated: 1455351249
+licenseType: Free
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: Component_1
+    100002: Component_10
+    100004: Component_11
+    100006: Component_12
+    100008: Component_13
+    100010: Component_2
+    100012: Component_2 1
+    100014: Component_2 10
+    100016: Component_2 11
+    100018: Component_2 12
+    100020: Component_2 13
+    100022: Component_2 14
+    100024: Component_2 15
+    100026: Component_2 16
+    100028: Component_2 17
+    100030: Component_2 18
+    100032: Component_2 19
+    100034: Component_2 2
+    100036: Component_2 20
+    100038: Component_2 21
+    100040: Component_2 22
+    100042: Component_2 23
+    100044: Component_2 24
+    100046: Component_2 3
+    100048: Component_2 4
+    100050: Component_2 5
+    100052: Component_2 6
+    100054: Component_2 7
+    100056: Component_2 8
+    100058: Component_2 9
+    100060: Component_4
+    100062: Component_5
+    100064: Component_6
+    100066: Component_7
+    100068: Component_8
+    100070: Component_9
+    100072: convexhull
+    100074: convexhull 1
+    100076: convexhull 10
+    100078: convexhull 11
+    100080: convexhull 12
+    100082: convexhull 13
+    100084: convexhull 14
+    100086: convexhull 15
+    100088: convexhull 16
+    100090: convexhull 17
+    100092: convexhull 18
+    100094: convexhull 19
+    100096: convexhull 2
+    100098: convexhull 20
+    100100: convexhull 21
+    100102: convexhull 22
+    100104: convexhull 23
+    100106: convexhull 24
+    100108: convexhull 25
+    100110: convexhull 26
+    100112: convexhull 27
+    100114: convexhull 28
+    100116: convexhull 29
+    100118: convexhull 3
+    100120: convexhull 30
+    100122: convexhull 31
+    100124: convexhull 32
+    100126: convexhull 33
+    100128: convexhull 4
+    100130: convexhull 5
+    100132: convexhull 6
+    100134: convexhull 7
+    100136: convexhull 8
+    100138: convexhull 9
+    100140: group_0
+    100142: group_1
+    100144: group_10
+    100146: group_11
+    100148: group_12
+    100150: group_13
+    100152: group_14
+    100154: group_15
+    100156: group_16
+    100158: group_17
+    100160: group_18
+    100162: group_19
+    100164: group_2
+    100166: group_20
+    100168: group_21
+    100170: group_22
+    100172: group_23
+    100174: group_24
+    100176: group_25
+    100178: group_26
+    100180: group_27
+    100182: group_28
+    100184: group_29
+    100186: group_3
+    100188: group_30
+    100190: group_31
+    100192: group_32
+    100194: group_33
+    100196: group_4
+    100198: group_5
+    100200: group_6
+    100202: group_7
+    100204: group_8
+    100206: group_9
+    100208: ID200
+    100210: ID208
+    100212: ID216
+    100214: ID224
+    100216: ID232
+    100218: ID240
+    100220: ID248
+    100222: ID256
+    100224: ID264
+    100226: ID272
+    100228: ID280
+    100230: ID288
+    100232: ID296
+    100234: ID304
+    100236: ID312
+    100238: ID320
+    100240: ID328
+    100242: ID336
+    100244: ID354
+    100246: ID362
+    100248: ID370
+    100250: ID378
+    100252: ID386
+    100254: ID394
+    100256: ID402
+    100258: ID410
+    100260: ID418
+    100262: ID426
+    100264: Last Saved SketchUp View
+    100266: //RootNode
+    100268: staticmesh
+    100270: staticmesh 1
+    400000: Component_1
+    400002: Component_10
+    400004: Component_11
+    400006: Component_12
+    400008: Component_13
+    400010: Component_2
+    400012: Component_2 1
+    400014: Component_2 10
+    400016: Component_2 11
+    400018: Component_2 12
+    400020: Component_2 13
+    400022: Component_2 14
+    400024: Component_2 15
+    400026: Component_2 16
+    400028: Component_2 17
+    400030: Component_2 18
+    400032: Component_2 19
+    400034: Component_2 2
+    400036: Component_2 20
+    400038: Component_2 21
+    400040: Component_2 22
+    400042: Component_2 23
+    400044: Component_2 24
+    400046: Component_2 3
+    400048: Component_2 4
+    400050: Component_2 5
+    400052: Component_2 6
+    400054: Component_2 7
+    400056: Component_2 8
+    400058: Component_2 9
+    400060: Component_4
+    400062: Component_5
+    400064: Component_6
+    400066: Component_7
+    400068: Component_8
+    400070: Component_9
+    400072: convexhull
+    400074: convexhull 1
+    400076: convexhull 10
+    400078: convexhull 11
+    400080: convexhull 12
+    400082: convexhull 13
+    400084: convexhull 14
+    400086: convexhull 15
+    400088: convexhull 16
+    400090: convexhull 17
+    400092: convexhull 18
+    400094: convexhull 19
+    400096: convexhull 2
+    400098: convexhull 20
+    400100: convexhull 21
+    400102: convexhull 22
+    400104: convexhull 23
+    400106: convexhull 24
+    400108: convexhull 25
+    400110: convexhull 26
+    400112: convexhull 27
+    400114: convexhull 28
+    400116: convexhull 29
+    400118: convexhull 3
+    400120: convexhull 30
+    400122: convexhull 31
+    400124: convexhull 32
+    400126: convexhull 33
+    400128: convexhull 4
+    400130: convexhull 5
+    400132: convexhull 6
+    400134: convexhull 7
+    400136: convexhull 8
+    400138: convexhull 9
+    400140: group_0
+    400142: group_1
+    400144: group_10
+    400146: group_11
+    400148: group_12
+    400150: group_13
+    400152: group_14
+    400154: group_15
+    400156: group_16
+    400158: group_17
+    400160: group_18
+    400162: group_19
+    400164: group_2
+    400166: group_20
+    400168: group_21
+    400170: group_22
+    400172: group_23
+    400174: group_24
+    400176: group_25
+    400178: group_26
+    400180: group_27
+    400182: group_28
+    400184: group_29
+    400186: group_3
+    400188: group_30
+    400190: group_31
+    400192: group_32
+    400194: group_33
+    400196: group_4
+    400198: group_5
+    400200: group_6
+    400202: group_7
+    400204: group_8
+    400206: group_9
+    400208: ID200
+    400210: ID208
+    400212: ID216
+    400214: ID224
+    400216: ID232
+    400218: ID240
+    400220: ID248
+    400222: ID256
+    400224: ID264
+    400226: ID272
+    400228: ID280
+    400230: ID288
+    400232: ID296
+    400234: ID304
+    400236: ID312
+    400238: ID320
+    400240: ID328
+    400242: ID336
+    400244: ID354
+    400246: ID362
+    400248: ID370
+    400250: ID378
+    400252: ID386
+    400254: ID394
+    400256: ID402
+    400258: ID410
+    400260: ID418
+    400262: ID426
+    400264: Last Saved SketchUp View
+    400266: //RootNode
+    400268: staticmesh
+    400270: staticmesh 1
+    2300000: Component_1
+    2300002: Component_10
+    2300004: Component_11
+    2300006: Component_12
+    2300008: Component_13
+    2300010: Component_2
+    2300012: Component_2 1
+    2300014: Component_2 10
+    2300016: Component_2 11
+    2300018: Component_2 12
+    2300020: Component_2 13
+    2300022: Component_2 14
+    2300024: Component_2 15
+    2300026: Component_2 16
+    2300028: Component_2 17
+    2300030: Component_2 18
+    2300032: Component_2 19
+    2300034: Component_2 2
+    2300036: Component_2 20
+    2300038: Component_2 21
+    2300040: Component_2 22
+    2300042: Component_2 23
+    2300044: Component_2 24
+    2300046: Component_2 3
+    2300048: Component_2 4
+    2300050: Component_2 5
+    2300052: Component_2 6
+    2300054: Component_2 7
+    2300056: Component_2 8
+    2300058: Component_2 9
+    2300060: Component_4
+    2300062: Component_5
+    2300064: Component_6
+    2300066: Component_7
+    2300068: Component_8
+    2300070: Component_9
+    2300072: ID200
+    2300074: ID208
+    2300076: ID216
+    2300078: ID224
+    2300080: ID232
+    2300082: ID240
+    2300084: ID248
+    2300086: ID256
+    2300088: ID264
+    2300090: ID272
+    2300092: ID280
+    2300094: ID288
+    2300096: ID296
+    2300098: ID304
+    2300100: ID312
+    2300102: ID320
+    2300104: ID328
+    2300106: ID336
+    2300108: ID354
+    2300110: ID362
+    2300112: ID370
+    2300114: ID378
+    2300116: ID386
+    2300118: ID394
+    2300120: ID402
+    2300122: ID410
+    2300124: ID418
+    2300126: ID426
+    3300000: Component_1
+    3300002: Component_10
+    3300004: Component_11
+    3300006: Component_12
+    3300008: Component_13
+    3300010: Component_2
+    3300012: Component_2 1
+    3300014: Component_2 10
+    3300016: Component_2 11
+    3300018: Component_2 12
+    3300020: Component_2 13
+    3300022: Component_2 14
+    3300024: Component_2 15
+    3300026: Component_2 16
+    3300028: Component_2 17
+    3300030: Component_2 18
+    3300032: Component_2 19
+    3300034: Component_2 2
+    3300036: Component_2 20
+    3300038: Component_2 21
+    3300040: Component_2 22
+    3300042: Component_2 23
+    3300044: Component_2 24
+    3300046: Component_2 3
+    3300048: Component_2 4
+    3300050: Component_2 5
+    3300052: Component_2 6
+    3300054: Component_2 7
+    3300056: Component_2 8
+    3300058: Component_2 9
+    3300060: Component_4
+    3300062: Component_5
+    3300064: Component_6
+    3300066: Component_7
+    3300068: Component_8
+    3300070: Component_9
+    3300072: ID200
+    3300074: ID208
+    3300076: ID216
+    3300078: ID224
+    3300080: ID232
+    3300082: ID240
+    3300084: ID248
+    3300086: ID256
+    3300088: ID264
+    3300090: ID272
+    3300092: ID280
+    3300094: ID288
+    3300096: ID296
+    3300098: ID304
+    3300100: ID312
+    3300102: ID320
+    3300104: ID328
+    3300106: ID336
+    3300108: ID354
+    3300110: ID362
+    3300112: ID370
+    3300114: ID378
+    3300116: ID386
+    3300118: ID394
+    3300120: ID402
+    3300122: ID410
+    3300124: ID418
+    3300126: ID426
+    4300000: Component_2
+    4300002: Component_2
+    4300004: Component_12
+    4300006: Component_6
+    4300008: Component_4
+    4300010: Component_11
+    4300012: Component_9
+    4300014: Component_7
+    4300016: Component_5
+    4300018: Component_8
+    4300020: Component_10
+    4300022: Component_1
+    4300024: ID200
+    4300026: ID208
+    4300028: ID216
+    4300030: ID224
+    4300032: ID232
+    4300034: ID240
+    4300036: ID248
+    4300038: ID256
+    4300040: ID264
+    4300042: ID272
+    4300044: ID280
+    4300046: ID288
+    4300048: ID296
+    4300050: ID304
+    4300052: ID312
+    4300054: ID320
+    4300056: ID328
+    4300058: ID336
+    4300060: Component_13
+    4300062: ID354
+    4300064: ID362
+    4300066: ID370
+    4300068: ID378
+    4300070: ID386
+    4300072: ID394
+    4300074: ID402
+    4300076: ID410
+    4300078: ID418
+    4300080: ID426
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

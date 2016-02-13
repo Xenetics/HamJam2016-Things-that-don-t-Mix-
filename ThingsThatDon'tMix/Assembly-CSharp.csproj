@@ -49,13 +49,16 @@
      <Compile Include="Assets\Scripts\Behaviours\Blast.cs" />
      <Compile Include="Assets\Scripts\Behaviours\Chemical.cs" />
      <Compile Include="Assets\Scripts\Behaviours\ConveyorBelt.cs" />
+     <Compile Include="Assets\Scripts\Behaviours\DestroyOnClick.cs" />
      <Compile Include="Assets\Scripts\Behaviours\OnTriggerTracker.cs" />
+     <Compile Include="Assets\Scripts\Behaviours\Vat.cs" />
      <Compile Include="Assets\Scripts\GameManager\GameManager.cs" />
      <Compile Include="Assets\Scripts\GameManager\GameState.cs" />
      <Compile Include="Assets\Scripts\GameManager\StateGameOver.cs" />
      <Compile Include="Assets\Scripts\GameManager\StateGamePlaying.cs" />
      <Compile Include="Assets\Scripts\GameManager\StateIntro.cs" />
      <Compile Include="Assets\Scripts\GameManager\StateMainMenu.cs" />
+     <Compile Include="Assets\Scripts\Managers\SoundManager.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>

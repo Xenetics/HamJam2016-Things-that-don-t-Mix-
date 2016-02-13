@@ -16,7 +16,11 @@ public class GameManager : MonoBehaviour
 	//singleton instance
 	public static GameManager Instance { get { return instance; } }
 	private static GameManager instance = null;
-	
+
+	//Game Vars
+	private CHEMICAL lastType = CHEMICAL.Empty;
+	private int chainPoints;
+
 	void Awake()
 	{
 		if (instance != null && instance != this)
@@ -91,6 +95,24 @@ public class GameManager : MonoBehaviour
 
     public void Quit()
     {
-        Application.Quit();	
+        Application.Quit();
+	}
+
+	public void Consume(CHEMICAL type)
+	{
+		//todo: create combo function for evaluation here.
+		if(lastType == type || lastType == CHEMICAL.Empty)
+		{
+			//store last type to continue the combo
+			lastType = type;
+			chainPoints++;
+			Debug.Log("Combo: x"+chainPoints);
+		}
+		else
+		{
+			lastType = CHEMICAL.Empty;
+			chainPoints = 0;
+			Debug.Log("Combo Lost!");
+		}
 	}
 }

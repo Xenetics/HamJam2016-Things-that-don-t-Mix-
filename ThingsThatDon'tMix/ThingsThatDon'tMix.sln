@@ -4,6 +4,10 @@ Microsoft Visual Studio Solution File, Format Version 11.00
 Project("{CCB3AF9C-1AE8-7C54-0288-6F0B313531A9}") = "ThingsThatDon'tMix", "Assembly-CSharp-firstpass.csproj", "{B5B3C2D7-BEEA-1DEF-2FDB-33915F4BDBB7}"
 EndProject
 Project("{CCB3AF9C-1AE8-7C54-0288-6F0B313531A9}") = "ThingsThatDon'tMix", "Assembly-CSharp.csproj", "{17A772B5-F374-D195-65CD-E2A052953375}"
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2015
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThingsThatDon'tMix.CSharp", "ThingsThatDon'tMix.CSharp.csproj", "{30311961-C110-4713-53E1-1653AE9C97E5}"
 EndProject
 Project("{CCB3AF9C-1AE8-7C54-0288-6F0B313531A9}") = "ThingsThatDon'tMix", "Assembly-UnityScript-firstpass.unityproj", "{1AF0DAA3-DDCA-8FC2-2808-728E006EF790}"
 EndProject
@@ -25,6 +29,10 @@ Global
 		{1AF0DAA3-DDCA-8FC2-2808-728E006EF790}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1AF0DAA3-DDCA-8FC2-2808-728E006EF790}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1AF0DAA3-DDCA-8FC2-2808-728E006EF790}.Release|Any CPU.Build.0 = Release|Any CPU
+		{30311961-C110-4713-53E1-1653AE9C97E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{30311961-C110-4713-53E1-1653AE9C97E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{30311961-C110-4713-53E1-1653AE9C97E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{30311961-C110-4713-53E1-1653AE9C97E5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

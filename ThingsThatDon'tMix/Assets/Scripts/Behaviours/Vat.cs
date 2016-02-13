@@ -34,6 +34,7 @@ public class Vat : MonoBehaviour
 				conveyors[i].speed = 0;
 			}
 			blastObject.Explode();
+			Invoke("GameOver",2f);
 		}
 	}
 
@@ -54,5 +55,10 @@ public class Vat : MonoBehaviour
 		}
 
 		Debug.Log("Fluid Height: "+ fluidHeight);
+	}
+
+	void GameOver()
+	{
+		GameManager.Instance.NewGameState(GameManager.Instance.stateGameOver);
 	}
 }

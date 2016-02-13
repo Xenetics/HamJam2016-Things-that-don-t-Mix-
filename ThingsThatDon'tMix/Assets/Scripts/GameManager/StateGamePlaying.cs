@@ -15,16 +15,10 @@ public class StateGamePlaying : GameState
 	
 	public override void StateUpdate() 
 	{
-		//TODO: Did the player lose?
-//		if(the vat bubbled over)
-//		{
-//			gameManager.NewGameState(gameManager.stateGameOver);
-//		}
-		
 		//TODO: Did the player win?
-		if(gameManager.theVat)
+		if(gameManager.theVat.fluidHeight <= 0)
 		{
-			gameManager.NewGameState(gameManager.stateGameLost);
+			NextLevel();
 		}
 		
 		//check for pause button 
@@ -84,5 +78,12 @@ public class StateGamePlaying : GameState
 	{
 		Time.timeScale = 0.0f;
 		isPaused = true;
+	}
+
+	private void NextLevel()
+	{
+		gameManager.currentLevelNumber++;
+		gameManager.theVat.maxFluid = 10 + ((gameManager.currentLevelNumber / 5) * 10);
+		gameManager.theVat.fluidHeight = gameManager.theVat.maxFluid / 2;
 	}
 }

@@ -25,9 +25,11 @@ public class GameManager : MonoBehaviour
 
 	//Game Vars
 	private CHEMICAL lastType = CHEMICAL.Empty;
-	private int chainPoints;
+	private uint chainPoints;
 	public MultiArray[] reactions;
 	public Vat theVat{get;set;}
+	public uint score{get;set;}
+	private uint FLASK_SCORE = 50;
 
 	void Awake()
 	{
@@ -122,6 +124,9 @@ public class GameManager : MonoBehaviour
 			chainPoints = 0;
 			Debug.Log("Combo Lost!");
 		}
+
+		score += chainPoints * FLASK_SCORE * ( 1 + (uint) currentLevelNumber / 10);
+		Debug.Log ("Score: "+score);
 	}
 
     public GameState GetState()

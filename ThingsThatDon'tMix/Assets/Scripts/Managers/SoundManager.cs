@@ -27,7 +27,7 @@ public class SoundManager : MonoBehaviour
 	private MusicState m_CurMusicState = MusicState.Menu;
 	/// <summary> Next state of the music </summary>
 	private MusicState m_NextMusicState = MusicState.Menu;
-    [Header("Sound & Music Lists")]
+    //[Header("Sound & Music Lists")]
 	///// <summary> These will contain all level specific tracks </summary>
 	//public List<Theme> LevelThemes = new List<Theme>();
 	///// <summary> The current musical theme </summary>

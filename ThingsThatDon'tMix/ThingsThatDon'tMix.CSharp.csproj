@@ -74,12 +74,15 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\Behaviours\Chemical.cs" />
+    <Compile Include="Assets\Scripts\Behaviours\ConveyorBelt.cs" />
     <Compile Include="Assets\Scripts\GameManager\GameManager.cs" />
     <Compile Include="Assets\Scripts\GameManager\GameState.cs" />
     <Compile Include="Assets\Scripts\GameManager\StateGameOver.cs" />
     <Compile Include="Assets\Scripts\GameManager\StateGamePlaying.cs" />
     <Compile Include="Assets\Scripts\GameManager\StateIntro.cs" />
     <Compile Include="Assets\Scripts\GameManager\StateMainMenu.cs" />
+    <Compile Include="Assets\Scripts\Managers\IntroManager.cs" />
     <Compile Include="Assets\Scripts\Managers\SoundManager.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\SyntaxTree\UnityVS\2015\UnityVS.CSharp.targets" />

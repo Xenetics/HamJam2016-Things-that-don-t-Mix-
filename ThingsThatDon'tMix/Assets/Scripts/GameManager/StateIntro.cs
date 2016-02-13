@@ -3,7 +3,7 @@ using System.Collections;
 
 public class StateIntro : GameState 
 {
-	private float countDown = 5f;
+	private float countDown = 10f;
 	public StateIntro(GameManager manager):base(manager){ }
 	
 	public override void OnStateEntered()

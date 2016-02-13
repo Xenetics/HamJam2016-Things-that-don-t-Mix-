@@ -77,5 +77,20 @@ public class GameManager : MonoBehaviour
 	{
 		//TODO: set-up the proper conversion here once the level count is determined and placeholder scenes created...
 		return currentLevelNumber + 2;
+    }
+
+    public void Play()
+	{
+		NewGameState(stateGamePlaying);
+	}
+
+	public void Options()
+	{
+		
+	}
+
+    public void Quit()
+    {
+        Application.Quit();	
 	}
 }

@@ -3,7 +3,7 @@ using System.Collections;
 
 public class StateIntro : GameState 
 {
-	private float countDown = 7f;
+	private float countDown = 6.5f;
     private bool m_ShieldPlay = true;
 	public StateIntro(GameManager manager):base(manager){ }
 	

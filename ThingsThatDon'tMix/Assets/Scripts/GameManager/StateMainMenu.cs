@@ -14,30 +14,5 @@ public class StateMainMenu : GameState
 	public override void StateGUI() 
 	{
 		GUILayout.Label("state: State Main Menu");
-		
-		if( GUILayout.Button("Single Player Game") )
-		{
-			gameManager.NewGameState(gameManager.stateGamePlaying);
-		}
-
-		if( GUILayout.Button("Multiplayer Game") )
-		{
-			//TODO: Go to the Multiplayer Lobby options screen.
-		}
-
-		if( GUILayout.Button("Options") )
-		{
-			//TODO: Option menu for various settings and resetting your profile
-		}
-
-		if( GUILayout.Button("Credits") )
-		{
-			//TODO: Launch the credit reel!
-		}
-	
-		if( GUILayout.Button("Quit Game") )
-		{
-			Application.Quit();	
-		}
 	}
 }

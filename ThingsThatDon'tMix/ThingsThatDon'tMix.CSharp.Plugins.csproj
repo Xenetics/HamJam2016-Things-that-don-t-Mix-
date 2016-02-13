@@ -5,16 +5,16 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{30311961-C110-4713-53E1-1653AE9C97E5}</ProjectGuid>
+    <ProjectGuid>{948C39CC-DC11-2881-BA88-0D0F3DCD5341}</ProjectGuid>
     <OutputType>Library</OutputType>
-    <AssemblyName>Assembly-CSharp</AssemblyName>
+    <AssemblyName>Assembly-CSharp-firstpass</AssemblyName>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{E097FAD1-6243-4DAD-9C02-E9B9EFC3FFC1};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <TargetFrameworkIdentifier>.NETFramework</TargetFrameworkIdentifier>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <TargetFrameworkProfile>Unity Subset v3.5</TargetFrameworkProfile>
     <CompilerResponseFile></CompilerResponseFile>
-    <UnityProjectType>Game:1</UnityProjectType>
+    <UnityProjectType>GamePlugins:3</UnityProjectType>
     <UnityBuildTarget>StandaloneWindows:5</UnityBuildTarget>
     <UnityVersion>5.2.3f1</UnityVersion>
     <RootNamespace></RootNamespace>
@@ -66,31 +66,9 @@
     <Reference Include="UnityEditor.iOS.Extensions.Xcode">
       <HintPath>Library\UnityAssemblies\UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
     </Reference>
-    <Reference Include="Assembly-UnityScript-firstpass">
-      <HintPath>Library\ScriptAssemblies\Assembly-UnityScript-firstpass.dll</HintPath>
-    </Reference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="ThingsThatDon&apos;tMix.CSharp.Plugins.csproj">
-      <Project>{948C39CC-DC11-2881-BA88-0D0F3DCD5341}</Project>
-      <Name>ThingsThatDon&apos;tMix.CSharp.Plugins</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <Compile Include="Assets\Scripts\Behaviours\ActivateOnTrigger.cs" />
-    <Compile Include="Assets\Scripts\Behaviours\Blast.cs" />
-    <Compile Include="Assets\Scripts\Behaviours\Chemical.cs" />
-    <Compile Include="Assets\Scripts\Behaviours\ConveyorBelt.cs" />
-    <Compile Include="Assets\Scripts\Behaviours\DestroyOnClick.cs" />
-    <Compile Include="Assets\Scripts\Behaviours\OnTriggerTracker.cs" />
-    <Compile Include="Assets\Scripts\Behaviours\Vat.cs" />
-    <Compile Include="Assets\Scripts\GameManager\GameManager.cs" />
-    <Compile Include="Assets\Scripts\GameManager\GameState.cs" />
-    <Compile Include="Assets\Scripts\GameManager\StateGameOver.cs" />
-    <Compile Include="Assets\Scripts\GameManager\StateGamePlaying.cs" />
-    <Compile Include="Assets\Scripts\GameManager\StateIntro.cs" />
-    <Compile Include="Assets\Scripts\GameManager\StateMainMenu.cs" />
-    <Compile Include="Assets\Scripts\Managers\SoundManager.cs" />
+    <Compile Include="Assets\Standard Assets\Character Controllers\Sources\Scripts\MouseLook.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\SyntaxTree\UnityVS\2015\UnityVS.CSharp.targets" />
 </Project>

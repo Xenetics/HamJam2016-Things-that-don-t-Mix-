@@ -1,5 +1,5 @@
 ﻿using UnityEngine;
-using System.Collections;
+using System.Collections.Generic;
 using System;
 using System.IO;
 using System.Runtime.Serialization.Formatters.Binary;
@@ -55,7 +55,60 @@ public class HighScoreManager : MonoBehaviour
 
     private void SortScores()
     {
+        List<KeyValuePair<string, uint>> _Scores = new List<KeyValuePair<string, uint>>();
+        _Scores.Add(new KeyValuePair<string, uint>(CurrentScores.Score1.Name, CurrentScores.Score1.Value));
+        _Scores.Add(new KeyValuePair<string, uint>(CurrentScores.Score2.Name, CurrentScores.Score2.Value));
+        _Scores.Add(new KeyValuePair<string, uint>(CurrentScores.Score3.Name, CurrentScores.Score3.Value));
+        _Scores.Add(new KeyValuePair<string, uint>(CurrentScores.Score4.Name, CurrentScores.Score4.Value));
+        _Scores.Add(new KeyValuePair<string, uint>(CurrentScores.Score5.Name, CurrentScores.Score5.Value));
 
+        _Scores.Sort((firstpair,nextpair) => { return firstpair.Value.CompareTo(nextpair.Value); });
+
+        CurrentScores.Score1.Name = _Scores[0].Key;
+        CurrentScores.Score1.Value = _Scores[0].Value;
+        CurrentScores.Score2.Name = _Scores[1].Key;
+        CurrentScores.Score2.Value = _Scores[1].Value;
+        CurrentScores.Score3.Name = _Scores[2].Key;
+        CurrentScores.Score3.Value = _Scores[2].Value;
+        CurrentScores.Score4.Name = _Scores[3].Key;
+        CurrentScores.Score4.Value = _Scores[3].Value;
+        CurrentScores.Score5.Name = _Scores[4].Key;
+        CurrentScores.Score5.Value = _Scores[4].Value;
+
+        UploadScores();
+    }
+
+    private void InsertScore(string name, int score)
+    {
+        List<KeyValuePair<string, uint>> _Scores = new List<KeyValuePair<string, uint>>();
+        if (score < CurrentScores.Score1.Value)
+        {
+            return;
+        }
+        else if(score > CurrentScores.Score1.Value)
+        {
+            _Scores.Add(new KeyValuePair<string, uint>(CurrentScores.Score1.Name, CurrentScores.Score1.Value));
+            _Scores.Add(new KeyValuePair<string, uint>(CurrentScores.Score2.Name, CurrentScores.Score2.Value));
+            _Scores.Add(new KeyValuePair<string, uint>(CurrentScores.Score3.Name, CurrentScores.Score3.Value));
+            _Scores.Add(new KeyValuePair<string, uint>(CurrentScores.Score4.Name, CurrentScores.Score4.Value));
+            _Scores.Add(new KeyValuePair<string, uint>(CurrentScores.Score5.Name, CurrentScores.Score5.Value));
+            _Scores.Add(new KeyValuePair<string, uint>(name, (uint)score));
+
+            _Scores.Sort((firstpair, nextpair) => { return firstpair.Value.CompareTo(nextpair.Value); });
+
+            CurrentScores.Score1.Name = _Scores[1].Key;
+            CurrentScores.Score1.Value = _Scores[1].Value;
+            CurrentScores.Score2.Name = _Scores[2].Key;
+            CurrentScores.Score2.Value = _Scores[2].Value;
+            CurrentScores.Score3.Name = _Scores[3].Key;
+            CurrentScores.Score3.Value = _Scores[3].Value;
+            CurrentScores.Score4.Name = _Scores[4].Key;
+            CurrentScores.Score4.Value = _Scores[4].Value;
+            CurrentScores.Score5.Name = _Scores[5].Key;
+            CurrentScores.Score5.Value = _Scores[5].Value;
+
+            UploadScores();
+        }
     }
 
     [Serializable]

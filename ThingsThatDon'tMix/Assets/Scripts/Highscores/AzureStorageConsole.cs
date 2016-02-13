@@ -663,8 +663,8 @@ namespace AzureStorageConsole
             if (string.IsNullOrEmpty(Account) || Account.Equals("hamjam", StringComparison.OrdinalIgnoreCase))
                 return "hamjam";
 
-            if (Account.Equals("Account2", StringComparison.OrdinalIgnoreCase))
-                return "Account2";
+            if (Account.Equals("hamjam", StringComparison.OrdinalIgnoreCase))
+                return "hamjam";
 
             if (Account.Equals("Account3", StringComparison.OrdinalIgnoreCase))
                 return "Account3";
@@ -677,8 +677,8 @@ namespace AzureStorageConsole
             if (Account == "hamjam")
                 return "MF1h7pMH/fj4/gBFL/0y4H5ACPqVvZmy46Ff7fuHDIUtc6lS2tHY2OX/70F04UUAGWlmF3WhIMbpZwpe3L4tfA==";
 
-            if (Account == "Account2")
-                return "Secret2";
+            if (Account == "hamjam")
+                return "B0xLu7VHvjE++di1jZxVCnavmSWBybla75VWx1HqEFyXnSNlPxeIuPZR/LhC0mjPYRY8iY9mOPNRm+kwNkpiAQ==";
 
             if (Account == "Account3")
                 return "Secret3";

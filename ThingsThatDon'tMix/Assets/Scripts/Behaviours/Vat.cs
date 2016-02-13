@@ -43,7 +43,7 @@ public class Vat : MonoBehaviour
 		Chemical chemical = flask.GetComponent<Chemical>();
 
 		//if the chemical reacts badly
-		if (chemical.type > type)
+		if (GameManager.Instance.reactions[(int)type].values[(int)chemical.type])
 		{
 			fluidHeight++;
 		}
@@ -52,5 +52,7 @@ public class Vat : MonoBehaviour
 		{
 			fluidHeight--;
 		}
+
+		Debug.Log("Fluid Height: "+ fluidHeight);
 	}
 }

@@ -9,7 +9,6 @@ public class StateIntro : GameState
 	
 	public override void OnStateEntered()
 	{
-		Application.LoadLevel("Intro");
         SoundManager.Instance.PlaySound( SoundManager.SoundType.SFX , "guitarIntro");
 	}
 	public override void OnStateExit(){}

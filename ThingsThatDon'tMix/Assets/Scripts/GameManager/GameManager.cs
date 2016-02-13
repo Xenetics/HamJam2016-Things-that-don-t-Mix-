@@ -3,6 +3,12 @@ using System.Collections;
 
 public class GameManager : MonoBehaviour 
 {
+	[System.Serializable]
+	public class MultiArray
+	{
+		public bool[] values;
+	}
+
 	//state control variables
 	private GameState currentState;
 	public StateGamePlaying stateGamePlaying{get;set;}
@@ -20,6 +26,8 @@ public class GameManager : MonoBehaviour
 	//Game Vars
 	private CHEMICAL lastType = CHEMICAL.Empty;
 	private int chainPoints;
+	public MultiArray[] reactions;
+	public Vat theVat{get;set;}
 
 	void Awake()
 	{
@@ -101,7 +109,7 @@ public class GameManager : MonoBehaviour
 	public void Consume(CHEMICAL type)
 	{
 		//todo: create combo function for evaluation here.
-		if(lastType == type || lastType == CHEMICAL.Empty)
+		if(!reactions[(int)type].values[(int)lastType])
 		{
 			//store last type to continue the combo
 			lastType = type;

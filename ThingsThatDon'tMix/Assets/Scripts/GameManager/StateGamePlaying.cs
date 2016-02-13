@@ -22,10 +22,10 @@ public class StateGamePlaying : GameState
 //		}
 		
 		//TODO: Did the player win?
-//		if(the vat is empty)
-//		{
-//			gameManager.NewGameState(gameManager.stateGameLost);
-//		}
+		if(gameManager.theVat)
+		{
+			gameManager.NewGameState(gameManager.stateGameLost);
+		}
 		
 		//check for pause button 
 		if (Input.GetKeyDown(KeyCode.Escape)) 

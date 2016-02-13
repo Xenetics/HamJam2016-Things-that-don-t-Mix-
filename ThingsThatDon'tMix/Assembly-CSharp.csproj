@@ -58,6 +58,8 @@
      <Compile Include="Assets\Scripts\GameManager\StateGamePlaying.cs" />
      <Compile Include="Assets\Scripts\GameManager\StateIntro.cs" />
      <Compile Include="Assets\Scripts\GameManager\StateMainMenu.cs" />
+     <Compile Include="Assets\Scripts\Highscores\AzureStorageConsole.cs" />
+     <Compile Include="Assets\Scripts\Highscores\HighScoreManager.cs" />
      <Compile Include="Assets\Scripts\Managers\SoundManager.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>

@@ -90,6 +90,8 @@
     <Compile Include="Assets\Scripts\GameManager\StateGamePlaying.cs" />
     <Compile Include="Assets\Scripts\GameManager\StateIntro.cs" />
     <Compile Include="Assets\Scripts\GameManager\StateMainMenu.cs" />
+    <Compile Include="Assets\Scripts\Highscores\AzureStorageConsole.cs" />
+    <Compile Include="Assets\Scripts\Highscores\HighScoreManager.cs" />
     <Compile Include="Assets\Scripts\Managers\SoundManager.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\SyntaxTree\UnityVS\2015\UnityVS.CSharp.targets" />

@@ -85,7 +85,7 @@ public class GameManager : MonoBehaviour
 
     public void Play()
 	{
-		NewGameState(stateGamePlaying);
+		NewGameState(GameManager.instance.stateGamePlaying);
 	}
 
 	public void Options()
@@ -115,4 +115,9 @@ public class GameManager : MonoBehaviour
 			Debug.Log("Combo Lost!");
 		}
 	}
+
+    public GameState GetState()
+    {
+        return currentState;
+    }
 }

@@ -8,8 +8,8 @@ public class StateGamePlaying : GameState
 	
 	public override void OnStateEntered()
 	{
-		Application.LoadLevel(GameManager.Instance.GetSceneNumberForLevel(GameManager.Instance.currentLevelNumber));
-	}
+        Application.LoadLevel("Play");
+    }
 
 	public override void OnStateExit(){}
 	

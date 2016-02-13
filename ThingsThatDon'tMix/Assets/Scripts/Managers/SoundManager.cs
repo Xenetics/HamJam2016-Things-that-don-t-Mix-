@@ -22,11 +22,11 @@ public class SoundManager : MonoBehaviour
     /// <summary> Types of sound that can be called </summary>
     public enum SoundType { Music, Ambient, SFX, Voice, System }
 	/// <summary> States the music can be in </summary>
-	public enum MusicState { Menu, Game, GameFast }
+	public enum MusicState { Intro, Menu, Game, GameFast }
 	/// <summary> Current state of the music </summary>
-	private MusicState m_CurMusicState = MusicState.Menu;
+	private MusicState m_CurMusicState = MusicState.Intro;
 	/// <summary> Next state of the music </summary>
-	private MusicState m_NextMusicState = MusicState.Menu;
+	private MusicState m_NextMusicState = MusicState.Intro;
     //[Header("Sound & Music Lists")]
 	///// <summary> These will contain all level specific tracks </summary>
 	//public List<Theme> LevelThemes = new List<Theme>();
@@ -319,16 +319,22 @@ public class SoundManager : MonoBehaviour
 	/// <summary> Is called every frame and handles per state calls </summary>
 	private void HandleMusicState()
 	{
-		switch (m_CurMusicState)
+        switch (m_CurMusicState)
 		{
 		    case MusicState.Menu:
-			
-			    break;
+                if (GameManager.Instance.GetState() != GameManager.Instance.stateGamePlaying)
+                {
+                    SetMusicState(MusicState.Game);
+                }
+                break;
 		    case MusicState.Game:
 
                 break;
-			    // More down here
-		}
+            case MusicState.GameFast:
+
+                break;
+                // More down here
+        }
 	}
 	
 	/// <summary> Is called when state is entered </summary>
@@ -337,11 +343,35 @@ public class SoundManager : MonoBehaviour
 		switch (m_CurMusicState)
 		{
 		    case MusicState.Menu:
-
-			    break;
+                if (Music_Source.clip != null)
+                {
+                    if (Music_Source.clip.name != "ChemichalTheme")
+                    {
+                        PlaySound(SoundType.Music, "ChemichalTheme");
+                        m_TransitionIn = true;
+                    }
+                }
+                else if (Music_Source.clip == null)
+                {
+                    PlaySound(SoundType.Music, "ChemichalTheme");
+                    m_TransitionIn = true;
+                }
+                break;
 		    case MusicState.Game:
-			    
-			    break;
+                if (Music_Source.clip != null)
+                {
+                    if (Music_Source.clip.name != "ChemichalTheme")
+                    {
+                        PlaySound(SoundType.Music, "ChemichalTheme");
+                        m_TransitionIn = true;
+                    }
+                }
+                else if (Music_Source.clip == null)
+                {
+                    PlaySound(SoundType.Music, "ChemichalTheme");
+                    m_TransitionIn = true;
+                }
+                break;
 		    case MusicState.GameFast:
                 m_SpeedUp = true;
 
@@ -376,7 +406,7 @@ public class SoundManager : MonoBehaviour
         if (m_TransitionOut)
         {
             m_Timer -= Time.unscaledDeltaTime;
-            //Music_Source.volume = m_MusicVolume * (m_Timer / m_FadeTime);
+            Music_Source.volume = m_MusicVolume * (m_Timer / m_FadeTime);
             if (m_Timer <= 0)
             {
                 m_TransitionOut = false;
@@ -445,4 +475,10 @@ public class SoundManager : MonoBehaviour
 		//	}
 		//}
   //  }
+
+    /// <summary> Gets the music state were going to </summary>
+    public MusicState GetNextMusicState()
+    {
+        return m_NextMusicState;
+    }
 }

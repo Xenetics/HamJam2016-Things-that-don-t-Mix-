@@ -51,17 +51,17 @@
     <Reference Include="UnityEngine">
       <HintPath>Library\UnityAssemblies\UnityEngine.dll</HintPath>
     </Reference>
+    <Reference Include="UnityEngine.Advertisements">
+      <HintPath>Library\UnityAssemblies\UnityEngine.Advertisements.dll</HintPath>
+    </Reference>
     <Reference Include="UnityEngine.UI">
       <HintPath>Library\UnityAssemblies\UnityEngine.UI.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.Networking">
       <HintPath>Library\UnityAssemblies\UnityEngine.Networking.dll</HintPath>
     </Reference>
-    <Reference Include="UnityEngine.Networking">
-      <HintPath>Library\UnityAssemblies\UnityEngine.Networking.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.UI">
-      <HintPath>Library\UnityAssemblies\UnityEngine.UI.dll</HintPath>
+    <Reference Include="UnityEngine.Analytics">
+      <HintPath>Library\UnityAssemblies\UnityEngine.Analytics.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor">
       <HintPath>Library\UnityAssemblies\UnityEditor.dll</HintPath>
@@ -74,15 +74,17 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\Behaviours\ActivateOnTrigger.cs" />
+    <Compile Include="Assets\Scripts\Behaviours\Blast.cs" />
     <Compile Include="Assets\Scripts\Behaviours\Chemical.cs" />
     <Compile Include="Assets\Scripts\Behaviours\ConveyorBelt.cs" />
+    <Compile Include="Assets\Scripts\Behaviours\OnTriggerTracker.cs" />
     <Compile Include="Assets\Scripts\GameManager\GameManager.cs" />
     <Compile Include="Assets\Scripts\GameManager\GameState.cs" />
     <Compile Include="Assets\Scripts\GameManager\StateGameOver.cs" />
     <Compile Include="Assets\Scripts\GameManager\StateGamePlaying.cs" />
     <Compile Include="Assets\Scripts\GameManager\StateIntro.cs" />
     <Compile Include="Assets\Scripts\GameManager\StateMainMenu.cs" />
-    <Compile Include="Assets\Scripts\Managers\IntroManager.cs" />
     <Compile Include="Assets\Scripts\Managers\SoundManager.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\SyntaxTree\UnityVS\2015\UnityVS.CSharp.targets" />

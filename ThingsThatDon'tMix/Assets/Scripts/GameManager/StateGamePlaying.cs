@@ -15,14 +15,14 @@ public class StateGamePlaying : GameState
 	
 	public override void StateUpdate() 
 	{
-		//TODO: Did the player win?
-//		if(the player won!)
+		//TODO: Did the player lose?
+//		if(the vat bubbled over)
 //		{
-//			gameManager.NewGameState(gameManager.stateGameWon);
+//			gameManager.NewGameState(gameManager.stateGameOver);
 //		}
 		
-		//TODO: Did the player lose or the game end?
-//		if(gameTime < 0)
+		//TODO: Did the player win?
+//		if(the vat is empty)
 //		{
 //			gameManager.NewGameState(gameManager.stateGameLost);
 //		}

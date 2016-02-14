@@ -13,14 +13,14 @@ public class StateGameOver : GameState
 	public override void OnStateExit(){}
 	public override void StateUpdate() 
 	{
-		if(countDown<=0)
-		{
-			gameManager.NewGameState(gameManager.stateMainMenu);
-		}
-		else
-		{
-			countDown -= Time.deltaTime;	
-		}
+		//if(countDown<=0)
+		//{
+		//	gameManager.NewGameState(gameManager.stateMainMenu);
+		//}
+		//else
+		//{
+		//	countDown -= Time.deltaTime;	
+		//}
 	}
 	public override void StateGUI() 
 	{

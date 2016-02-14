@@ -1,5 +1,5 @@
 ﻿using UnityEngine;
-using System.Collections;
+using System.Collections.Generic;
 
 public class Vat : MonoBehaviour 
 {
@@ -8,6 +8,8 @@ public class Vat : MonoBehaviour
 	public float maxFluid = 10;
 	public Blast blastObject;
 	public ConveyorBelt[] conveyors;
+    public SpriteRenderer Label;
+    public List<Sprite> Labels = new List<Sprite>();
 
 	// Use this for initialization
 	void Awake () 
@@ -18,14 +20,15 @@ public class Vat : MonoBehaviour
 	// Update is called once per frame
 	void Update () 
 	{
-	
-	}
+        LabelMake();
+    }
 
 	//set trigger has been tripped.
 	void OnTriggerEnter(Collider other)
 	{
 		MixFluid(other.gameObject);
 		Destroy(other.gameObject);
+        SoundManager.Instance.PlaySound(SoundManager.SoundType.SFX , "splash");
 
 		if(fluidHeight > maxFluid)
 		{
@@ -61,4 +64,44 @@ public class Vat : MonoBehaviour
 	{
 		GameManager.Instance.NewGameState(GameManager.Instance.stateGameOver);
 	}
+
+    private void LabelMake()
+    {
+        switch (type)
+        {
+            case CHEMICAL.Beryllium:
+                Label.sprite = Labels[0];
+                break;
+            case CHEMICAL.Boron:
+                Label.sprite = Labels[1];
+                break;
+            case CHEMICAL.Carbon:
+                Label.sprite = Labels[2];
+                break;
+            case CHEMICAL.Fluorine:
+                Label.sprite = Labels[3];
+                break;
+            case CHEMICAL.Helium:
+                Label.sprite = Labels[4];
+                break;
+            case CHEMICAL.Hydrogen:
+                Label.sprite = Labels[5];
+                break;
+            case CHEMICAL.Lithium:
+                Label.sprite = Labels[6];
+                break;
+            case CHEMICAL.Neon:
+                Label.sprite = Labels[7];
+                break;
+            case CHEMICAL.Nitrogen:
+                Label.sprite = Labels[8];
+                break;
+            case CHEMICAL.Oxygen:
+                Label.sprite = Labels[9];
+                break;
+            case CHEMICAL.Sodium:
+                Label.sprite = Labels[10];
+                break;
+        }
+    }
 }

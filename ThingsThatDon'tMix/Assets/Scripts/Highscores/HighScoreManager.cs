@@ -7,9 +7,24 @@ using System.Net;
 
 public class HighScoreManager : MonoBehaviour
 {
+    private static HighScoreManager instance = null;
+    public static HighScoreManager Instance { get { return instance; } }
+
+    void Awake()
+    {
+        if (instance != null && instance != this)
+        {
+            Destroy(gameObject);
+            return;
+        }
+        else
+        {
+            instance = this;
+        }
+    }
 
     private AzureStorageConsole.BlobHelper m_BlobHelper;
-    private Scores CurrentScores;
+    public Scores CurrentScores;
 
 	void Start ()
     {
@@ -78,7 +93,7 @@ public class HighScoreManager : MonoBehaviour
         UploadScores();
     }
 
-    private void InsertScore(string name, int score)
+    public void InsertScore(string name, int score)
     {
         List<KeyValuePair<string, uint>> _Scores = new List<KeyValuePair<string, uint>>();
         if (score < CurrentScores.Score1.Value)
@@ -112,14 +127,14 @@ public class HighScoreManager : MonoBehaviour
     }
 
     [Serializable]
-    private class Score
+    public class Score
     {
         public string Name;
         public uint Value;
     }
 
     [Serializable]
-    private class Scores
+    public class Scores
     {
         public Score Score1;
         public Score Score2;

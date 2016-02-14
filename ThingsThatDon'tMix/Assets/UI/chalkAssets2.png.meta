@@ -1,0 +1,222 @@
+fileFormatVersion: 2
+guid: dd4f22a550ce3ef4a965c1ba9e479175
+timeCreated: 1455474797
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: chalkAssets2_0
+    21300002: chalkAssets2_1
+    21300004: chalkAssets2_2
+    21300006: chalkAssets2_3
+    21300008: chalkAssets2_5
+    21300010: chalkAssets2_6
+    21300012: chalkAssets2_7
+    21300014: chalkAssets2_10
+    21300016: chalkAssets2_12
+    21300018: chalkAssets2_14
+    21300020: chalkAssets2_15
+    21300022: chalkAssets2_17
+    21300024: chalkAssets2_19
+    21300026: chalkAssets2_20
+    21300028: chalkAssets2_21
+    21300030: chalkAssets2_22
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -2
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: chalkAssets2_0
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 287
+        width: 165
+        height: 197
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 19, z: 0, w: 0}
+    - name: chalkAssets2_1
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 366
+        width: 71
+        height: 106
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: chalkAssets2_3
+      rect:
+        serializedVersion: 2
+        x: 451
+        y: 356
+        width: 113
+        height: 102
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: chalkAssets2_5
+      rect:
+        serializedVersion: 2
+        x: 615
+        y: 348
+        width: 150
+        height: 94
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: chalkAssets2_6
+      rect:
+        serializedVersion: 2
+        x: 842
+        y: 353
+        width: 156
+        height: 150
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: chalkAssets2_7
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 234
+        width: 78
+        height: 120
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 4, y: 0, z: 0, w: 0}
+    - name: chalkAssets2_10
+      rect:
+        serializedVersion: 2
+        x: 421
+        y: 234
+        width: 120
+        height: 98
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: chalkAssets2_12
+      rect:
+        serializedVersion: 2
+        x: 609
+        y: 237
+        width: 79
+        height: 87
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: chalkAssets2_14
+      rect:
+        serializedVersion: 2
+        x: 783
+        y: 247
+        width: 89
+        height: 92
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: chalkAssets2_15
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 83
+        width: 131
+        height: 169
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: chalkAssets2_17
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 75
+        width: 135
+        height: 112
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: chalkAssets2_19
+      rect:
+        serializedVersion: 2
+        x: 414
+        y: 77
+        width: 67
+        height: 118
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: chalkAssets2_20
+      rect:
+        serializedVersion: 2
+        x: 571
+        y: 94
+        width: 80
+        height: 88
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: chalkAssets2_21
+      rect:
+        serializedVersion: 2
+        x: 724
+        y: 97
+        width: 63
+        height: 98
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: chalkAssets2_22
+      rect:
+        serializedVersion: 2
+        x: 846
+        y: 46
+        width: 144
+        height: 158
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

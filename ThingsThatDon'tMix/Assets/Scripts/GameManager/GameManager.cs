@@ -25,7 +25,7 @@ public class GameManager : MonoBehaviour
 
 	//Game Vars
 	private CHEMICAL lastType = CHEMICAL.Empty;
-	private uint chainPoints;
+	public uint chainPoints;
 	public MultiArray[] reactions;
 	public Vat theVat{get;set;}
 	public uint score{get;set;}

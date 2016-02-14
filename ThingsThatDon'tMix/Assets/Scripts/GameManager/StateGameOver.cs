@@ -10,20 +10,17 @@ public class StateGameOver : GameState
 		Application.LoadLevel("GameOver");
 		countDown = 5f;
 	}
-	public override void OnStateExit(){}
+	public override void OnStateExit(){
+		GameManager.Instance.score = 0;
+		GameManager.Instance.currentLevelNumber = 1;
+		GameManager.Instance.chainPoints = 0;
+	}
 	public override void StateUpdate() 
 	{
-		//if(countDown<=0)
-		//{
-		//	gameManager.NewGameState(gameManager.stateMainMenu);
-		//}
-		//else
-		//{
-		//	countDown -= Time.deltaTime;	
-		//}
+
 	}
 	public override void StateGUI() 
 	{
-		GUILayout.Label("state: GAME OVER  -  "+countDown);
+
 	}
 }

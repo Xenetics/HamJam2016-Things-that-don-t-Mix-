@@ -17,11 +17,14 @@ public class ConveyorBelt : MonoBehaviour
 
 	void SpawnFlask()
 	{
-		//spawn a chemical
-		Instantiate(prefabs[Random.Range(0,(int)CHEMICAL.Size-1)],spawnPoint.position,Quaternion.identity);
+		if(speed > 0)
+		{
+			//spawn a chemical
+			Instantiate(prefabs[Random.Range(0,(int)CHEMICAL.Size-2)],spawnPoint.position,spawnPoint.rotation);
 
-		//Call this again later
-		Invoke("SpawnFlask",Random.Range(spawnMin,spawnMax));
+			//Call this again later
+			Invoke("SpawnFlask",Random.Range(spawnMin,spawnMax));
+		}
 	}
 
 	void OnCollisionStay(Collision collision) 

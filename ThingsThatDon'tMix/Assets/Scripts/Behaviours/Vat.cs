@@ -11,12 +11,22 @@ public class Vat : MonoBehaviour
     public SpriteRenderer Label;
     public List<Sprite> Labels = new List<Sprite>();
 	public Transform FluidObject;
+	private float originalHeight;
+	private float originalPosition;
+	private float POSITION_DRIFT = 1.59f;
 
 	// Use this for initialization
 	void Awake () 
 	{
 		GameManager.Instance.theVat = this;
 		LabelMake();
+	}
+
+	void Start()
+	{
+		originalPosition = FluidObject.transform.position.y;
+		originalHeight = FluidObject.transform.localScale.y;
+		UpdateFluid();
 	}
 	
 	// Update is called once per frame
@@ -41,6 +51,8 @@ public class Vat : MonoBehaviour
 			blastObject.Explode();
             SoundManager.Instance.PlaySound(SoundManager.SoundType.SFX, "JazzyExplosion");
 			Invoke("GameOver",2f);
+			FluidObject.transform.localScale = new Vector3(FluidObject.transform.localScale.x,0.1f,FluidObject.transform.localScale.z);
+			FluidObject.transform.position = new Vector3(FluidObject.transform.position.x,-6.90f,FluidObject.transform.position.z);
 		}
 	}
 
@@ -60,7 +72,16 @@ public class Vat : MonoBehaviour
 			fluidHeight--;
 		}
 
+		UpdateFluid();
+
 		Debug.Log("Fluid Height: "+ fluidHeight);
+	}
+
+	public void UpdateFluid()
+	{
+		//adjust goo size
+		FluidObject.transform.localScale = new Vector3(FluidObject.transform.localScale.x, fluidHeight / maxFluid * originalHeight, FluidObject.transform.localScale.z);
+		FluidObject.transform.position = new Vector3(FluidObject.transform.position.x, originalPosition - (POSITION_DRIFT - (fluidHeight / maxFluid * POSITION_DRIFT)), FluidObject.transform.position.z);
 	}
 
 	void GameOver()

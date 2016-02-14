@@ -68,7 +68,7 @@ public class StateGamePlaying : GameState
 		}
 		else
 		{
-			GUILayout.Label("state: GAME PLAYING");	
+			//not paused - show HUD
 		}
 	}
 	
@@ -93,6 +93,7 @@ public class StateGamePlaying : GameState
         SoundManager.Instance.PlaySound(SoundManager.SoundType.SFX, "glug");
 		gameManager.theVat.maxFluid = 10 + ((gameManager.currentLevelNumber / 5) * 10);
 		gameManager.theVat.fluidHeight = gameManager.theVat.maxFluid - 5;
+		gameManager.theVat.UpdateFluid();
 		gameManager.theVat.conveyors[0].speed += 5;
 		gameManager.theVat.conveyors[1].speed += 5;
 		gameManager.theVat.conveyors[0].spawnMin = Mathf.Max (0.5f, (gameManager.theVat.conveyors[0].spawnMin - 0.02f));

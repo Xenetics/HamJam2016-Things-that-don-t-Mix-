@@ -481,4 +481,10 @@ public class SoundManager : MonoBehaviour
     {
         return m_NextMusicState;
     }
+
+    /// <summary> stops ambient sound </summary>
+    public void MuteAmbient()
+    {
+        Ambient_Source.Stop();
+    }
 }

@@ -9,9 +9,13 @@ public class StateGamePlaying : GameState
 	public override void OnStateEntered()
 	{
         Application.LoadLevel("Play");
+        SoundManager.Instance.PlaySound(SoundManager.SoundType.Ambient, "conveyorBubble");
     }
 
-	public override void OnStateExit(){}
+	public override void OnStateExit()
+    {
+        SoundManager.Instance.MuteAmbient(); ;
+    }
 	
 	public override void StateUpdate() 
 	{
@@ -92,6 +96,6 @@ public class StateGamePlaying : GameState
 		gameManager.theVat.conveyors[1].spawnMin = Mathf.Max (0.5f, (gameManager.theVat.conveyors[1].spawnMin - 0.02f));
 		gameManager.theVat.conveyors[1].spawnMax = Mathf.Max (0.5f, (gameManager.theVat.conveyors[1].spawnMin - 0.025f));
 
-		//TODO: Play glug glug
+        SoundManager.Instance.PlaySound(SoundManager.SoundType.SFX, "glug");
 	}
 }

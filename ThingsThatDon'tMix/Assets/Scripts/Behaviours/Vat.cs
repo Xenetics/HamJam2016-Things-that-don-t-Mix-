@@ -37,6 +37,7 @@ public class Vat : MonoBehaviour
 				conveyors[i].speed = 0;
 			}
 			blastObject.Explode();
+            SoundManager.Instance.PlaySound(SoundManager.SoundType.SFX, "JazzyExplosion");
 			Invoke("GameOver",2f);
 		}
 	}

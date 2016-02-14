@@ -18,7 +18,7 @@ public class DestroyOnClick : MonoBehaviour {
 		// this object was clicked - do something
 		Chemical chem = gameObject.GetComponent<Chemical>();
 		GameManager.Instance.Consume(chem.type);
-
+        SoundManager.Instance.PlaySound(SoundManager.SoundType.SFX, "tink");
 		//clean up the object
 		Destroy (this.gameObject);
 	}   

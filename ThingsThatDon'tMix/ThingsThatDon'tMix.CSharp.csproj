@@ -86,6 +86,7 @@
     <Compile Include="Assets\Scripts\Behaviours\Vat.cs" />
     <Compile Include="Assets\Scripts\GameManager\CludgeLevelChange.cs" />
     <Compile Include="Assets\Scripts\GameManager\GameManager.cs" />
+    <Compile Include="Assets\Scripts\GameManager\GameOverUI.cs" />
     <Compile Include="Assets\Scripts\GameManager\GameState.cs" />
     <Compile Include="Assets\Scripts\GameManager\StateGameOver.cs" />
     <Compile Include="Assets\Scripts\GameManager\StateGamePlaying.cs" />

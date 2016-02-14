@@ -26,6 +26,7 @@ public class Vat : MonoBehaviour
 	{
 		MixFluid(other.gameObject);
 		Destroy(other.gameObject);
+        SoundManager.Instance.PlaySound(SoundManager.SoundType.SFX , "splash");
 
 		if(fluidHeight > maxFluid)
 		{

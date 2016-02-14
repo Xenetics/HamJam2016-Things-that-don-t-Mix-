@@ -24,8 +24,6 @@ public class ConveyorBelt : MonoBehaviour
 
 			//Call this again later
 			Invoke("SpawnFlask",Random.Range(spawnMin,spawnMax));
-            SoundManager.Instance.PlaySound(SoundManager.SoundType.SFX, "clunk");
-            SoundManager.Instance.PlaySound(SoundManager.SoundType.SFX, "tink");
         }
 	}
 

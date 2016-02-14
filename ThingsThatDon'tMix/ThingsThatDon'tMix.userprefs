@@ -1,13 +1,14 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\GameManager\StateGamePlaying.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Behaviours\Vat.cs">
     <Files>
-      <File FileName="Assets\Scripts\Behaviours\Vat.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Behaviours\Blast.cs" Line="19" Column="50" />
-      <File FileName="Assets\Scripts\GameManager\StateGamePlaying.cs" Line="95" Column="25" />
-      <File FileName="Assets\Scripts\GameManager\GameManager.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\GameManager\StateGamePlaying.cs" Line="103" Column="2" />
+      <File FileName="Assets\Scripts\Behaviours\Vat.cs" Line="26" Column="6" />
+      <File FileName="Assets\Scripts\GameManager\GameManager.cs" Line="130" Column="2" />
       <File FileName="Assets\Scripts\GameManager\StateIntro.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\GameManager\StateMainMenu.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\GameManager\GameState.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\GameManager\StateGameOver.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

@@ -10,17 +10,19 @@ public class Vat : MonoBehaviour
 	public ConveyorBelt[] conveyors;
     public SpriteRenderer Label;
     public List<Sprite> Labels = new List<Sprite>();
+	public Transform FluidObject;
 
 	// Use this for initialization
 	void Awake () 
 	{
 		GameManager.Instance.theVat = this;
+		LabelMake();
 	}
 	
 	// Update is called once per frame
 	void Update () 
 	{
-        LabelMake();
+        
     }
 
 	//set trigger has been tripped.
@@ -48,7 +50,7 @@ public class Vat : MonoBehaviour
 		Chemical chemical = flask.GetComponent<Chemical>();
 
 		//if the chemical reacts badly
-		if (GameManager.Instance.reactions[(int)type].values[(int)chemical.type])
+		if (GameManager.Instance.reactions[(int)type].values[(int)chemical.type] || type == chemical.type)
 		{
 			fluidHeight++;
 		}
@@ -66,8 +68,10 @@ public class Vat : MonoBehaviour
 		GameManager.Instance.NewGameState(GameManager.Instance.stateGameOver);
 	}
 
-    private void LabelMake()
+    public void LabelMake()
     {
+		type = (CHEMICAL)Random.Range (1,(int)CHEMICAL.Size);
+
         switch (type)
         {
             case CHEMICAL.Beryllium:

@@ -87,6 +87,10 @@ public class StateGamePlaying : GameState
 	private void NextLevel()
 	{
 		gameManager.currentLevelNumber++;
+	
+		//generate new vat
+		gameManager.theVat.LabelMake();
+        SoundManager.Instance.PlaySound(SoundManager.SoundType.SFX, "glug");
 		gameManager.theVat.maxFluid = 10 + ((gameManager.currentLevelNumber / 5) * 10);
 		gameManager.theVat.fluidHeight = gameManager.theVat.maxFluid - 5;
 		gameManager.theVat.conveyors[0].speed += 5;
@@ -95,7 +99,5 @@ public class StateGamePlaying : GameState
 		gameManager.theVat.conveyors[0].spawnMax = Mathf.Max (0.5f, (gameManager.theVat.conveyors[0].spawnMin - 0.025f));
 		gameManager.theVat.conveyors[1].spawnMin = Mathf.Max (0.5f, (gameManager.theVat.conveyors[1].spawnMin - 0.02f));
 		gameManager.theVat.conveyors[1].spawnMax = Mathf.Max (0.5f, (gameManager.theVat.conveyors[1].spawnMin - 0.025f));
-
-        SoundManager.Instance.PlaySound(SoundManager.SoundType.SFX, "glug");
 	}
 }

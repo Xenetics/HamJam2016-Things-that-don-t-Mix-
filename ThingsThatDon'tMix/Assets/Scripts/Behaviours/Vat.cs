@@ -82,6 +82,44 @@ public class Vat : MonoBehaviour
 		//adjust goo size
 		FluidObject.transform.localScale = new Vector3(FluidObject.transform.localScale.x, fluidHeight / maxFluid * originalHeight, FluidObject.transform.localScale.z);
 		FluidObject.transform.position = new Vector3(FluidObject.transform.position.x, originalPosition - (POSITION_DRIFT - (fluidHeight / maxFluid * POSITION_DRIFT)), FluidObject.transform.position.z);
+
+		//adjust goo colour
+		switch (type)
+		{
+		case CHEMICAL.Beryllium:
+			FluidObject.gameObject.GetComponent<Renderer>().material.color = new Color32(153,153,102,255);
+			break;
+		case CHEMICAL.Boron:
+			FluidObject.gameObject.GetComponent<Renderer>().material.color = new Color32(25,25,25,255);
+			break;
+		case CHEMICAL.Carbon:
+			FluidObject.gameObject.GetComponent<Renderer>().material.color = new Color32(204,255,51,255);
+			break;
+		case CHEMICAL.Fluorine:
+			FluidObject.gameObject.GetComponent<Renderer>().material.color = new Color32(0,255,255,255);
+			break;
+		case CHEMICAL.Helium:
+			FluidObject.gameObject.GetComponent<Renderer>().material.color = new Color32(255,153,204,255);
+			break;
+		case CHEMICAL.Hydrogen:
+			FluidObject.gameObject.GetComponent<Renderer>().material.color = new Color32(204,51,255,255);
+			break;
+		case CHEMICAL.Lithium:
+			FluidObject.gameObject.GetComponent<Renderer>().material.color = new Color32(255,255,153,255);
+			break;
+		case CHEMICAL.Neon:
+			FluidObject.gameObject.GetComponent<Renderer>().material.color = new Color32(255,0,0,255);
+			break;
+		case CHEMICAL.Nitrogen:
+			FluidObject.gameObject.GetComponent<Renderer>().material.color = new Color32(217,217,217,150);
+			break;
+		case CHEMICAL.Oxygen:
+			FluidObject.gameObject.GetComponent<Renderer>().material.color = new Color32(0,0,179,255);
+			break;
+		case CHEMICAL.Sodium:
+			FluidObject.gameObject.GetComponent<Renderer>().material.color = new Color32(255,255,255,200);
+			break;
+		}
 	}
 
 	void GameOver()

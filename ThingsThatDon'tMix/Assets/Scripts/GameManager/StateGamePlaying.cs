@@ -14,7 +14,7 @@ public class StateGamePlaying : GameState
 
 	public override void OnStateExit()
     {
-        SoundManager.Instance.MuteAmbient(); ;
+        SoundManager.Instance.MuteAmbient();
     }
 	
 	public override void StateUpdate() 

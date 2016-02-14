@@ -6,12 +6,14 @@ public class CludgeLevelChange : MonoBehaviour
 {
     public GameObject MainMenu;
     public GameObject HighScoreMenu;
+    public GameObject CreditsMenu;
     public List<Text> Players = new List<Text>();
     public List<Text> Scores = new List<Text>();
 
 
     // Use this for initialization
-    void Start () {
+    void Start ()
+    {
 	
 	}
 	
@@ -30,7 +32,16 @@ public class CludgeLevelChange : MonoBehaviour
     {
         HighScoreMenu.SetActive(true);
         MainMenu.SetActive(false);
+        CreditsMenu.SetActive(false);
         WriteScores();
+        SoundManager.Instance.PlaySound(SoundManager.SoundType.SFX, "chalk");
+    }
+
+    public void Credits()
+    {
+        HighScoreMenu.SetActive(false);
+        MainMenu.SetActive(false);
+        CreditsMenu.SetActive(true);
         SoundManager.Instance.PlaySound(SoundManager.SoundType.SFX, "chalk");
     }
 
@@ -38,6 +49,7 @@ public class CludgeLevelChange : MonoBehaviour
     {
         HighScoreMenu.SetActive(false);
         MainMenu.SetActive(true);
+        CreditsMenu.SetActive(false);
         SoundManager.Instance.PlaySound(SoundManager.SoundType.SFX, "chalk");
     }
 

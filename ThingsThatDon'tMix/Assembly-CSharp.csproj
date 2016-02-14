@@ -53,7 +53,9 @@
      <Compile Include="Assets\Scripts\Behaviours\OnTriggerTracker.cs" />
      <Compile Include="Assets\Scripts\Behaviours\Vat.cs" />
      <Compile Include="Assets\Scripts\GameManager\CludgeLevelChange.cs" />
+     <Compile Include="Assets\Scripts\GameManager\GameCanvasUI.cs" />
      <Compile Include="Assets\Scripts\GameManager\GameManager.cs" />
+     <Compile Include="Assets\Scripts\GameManager\GameOverUI.cs" />
      <Compile Include="Assets\Scripts\GameManager\GameState.cs" />
      <Compile Include="Assets\Scripts\GameManager\StateGameOver.cs" />
      <Compile Include="Assets\Scripts\GameManager\StateGamePlaying.cs" />
@@ -62,17 +64,11 @@
      <Compile Include="Assets\Scripts\Highscores\AzureStorageConsole.cs" />
      <Compile Include="Assets\Scripts\Highscores\HighScoreManager.cs" />
      <Compile Include="Assets\Scripts\Managers\SoundManager.cs" />
- <Reference Include="UnityEngine.Advertisements">
- <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Advertisements/UnityEngine.Advertisements.dll</HintPath>
- </Reference>
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.Networking">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.Analytics">
- <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
  </Reference>
  <Reference Include="Mono.Cecil">
  <HintPath>C:/Program Files/Unity/Editor/Data/Managed/Mono.Cecil.dll</HintPath>

@@ -15,7 +15,7 @@ public class StateGamePlaying : GameState
 	
 	public override void StateUpdate() 
 	{
-		//TODO: Did the player win?
+		// Did the player win?
 		if(gameManager.theVat.fluidHeight <= 0)
 		{
 			NextLevel();
@@ -84,8 +84,14 @@ public class StateGamePlaying : GameState
 	{
 		gameManager.currentLevelNumber++;
 		gameManager.theVat.maxFluid = 10 + ((gameManager.currentLevelNumber / 5) * 10);
-		gameManager.theVat.fluidHeight = gameManager.theVat.maxFluid / 2;
+		gameManager.theVat.fluidHeight = gameManager.theVat.maxFluid - 5;
 		gameManager.theVat.conveyors[0].speed += 5;
 		gameManager.theVat.conveyors[1].speed += 5;
+		gameManager.theVat.conveyors[0].spawnMin = Mathf.Max (0.5f, (gameManager.theVat.conveyors[0].spawnMin - 0.02f));
+		gameManager.theVat.conveyors[0].spawnMax = Mathf.Max (0.5f, (gameManager.theVat.conveyors[0].spawnMin - 0.025f));
+		gameManager.theVat.conveyors[1].spawnMin = Mathf.Max (0.5f, (gameManager.theVat.conveyors[1].spawnMin - 0.02f));
+		gameManager.theVat.conveyors[1].spawnMax = Mathf.Max (0.5f, (gameManager.theVat.conveyors[1].spawnMin - 0.025f));
+
+		//TODO: Play glug glug
 	}
 }

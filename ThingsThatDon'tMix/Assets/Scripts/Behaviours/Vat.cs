@@ -10,9 +10,9 @@ public class Vat : MonoBehaviour
 	public ConveyorBelt[] conveyors;
 
 	// Use this for initialization
-	void Start () 
+	void Awake () 
 	{
-	
+		GameManager.Instance.theVat = this;
 	}
 	
 	// Update is called once per frame

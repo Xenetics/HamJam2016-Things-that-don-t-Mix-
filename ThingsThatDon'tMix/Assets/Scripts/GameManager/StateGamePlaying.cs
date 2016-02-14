@@ -85,5 +85,7 @@ public class StateGamePlaying : GameState
 		gameManager.currentLevelNumber++;
 		gameManager.theVat.maxFluid = 10 + ((gameManager.currentLevelNumber / 5) * 10);
 		gameManager.theVat.fluidHeight = gameManager.theVat.maxFluid / 2;
+		gameManager.theVat.conveyors[0].speed += 5;
+		gameManager.theVat.conveyors[1].speed += 5;
 	}
 }

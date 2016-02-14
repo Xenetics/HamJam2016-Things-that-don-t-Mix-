@@ -86,16 +86,10 @@ public class GameManager : MonoBehaviour
 		currentState.OnStateEntered();
 	}
 
-	//converts the requested level number (1 to X) into the proper scene number and returns that to be used with Application.LoadLevel().
-	public int GetSceneNumberForLevel(int num)
-	{
-		//TODO: set-up the proper conversion here once the level count is determined and placeholder scenes created...
-		return currentLevelNumber + 2;
-    }
 
     public void Play()
 	{
-		NewGameState(GameManager.instance.stateGamePlaying);
+		NewGameState(GameManager.Instance.stateGamePlaying);
 	}
 
 	public void Options()

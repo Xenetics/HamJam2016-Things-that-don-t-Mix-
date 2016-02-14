@@ -52,6 +52,7 @@
      <Compile Include="Assets\Scripts\Behaviours\DestroyOnClick.cs" />
      <Compile Include="Assets\Scripts\Behaviours\OnTriggerTracker.cs" />
      <Compile Include="Assets\Scripts\Behaviours\Vat.cs" />
+     <Compile Include="Assets\Scripts\GameManager\CludgeLevelChange.cs" />
      <Compile Include="Assets\Scripts\GameManager\GameManager.cs" />
      <Compile Include="Assets\Scripts\GameManager\GameState.cs" />
      <Compile Include="Assets\Scripts\GameManager\StateGameOver.cs" />

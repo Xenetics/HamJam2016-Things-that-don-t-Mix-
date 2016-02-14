@@ -110,13 +110,15 @@ public class GameManager : MonoBehaviour
 			//store last type to continue the combo
 			lastType = type;
 			chainPoints++;
+            SoundManager.Instance.PlaySoundRandom(SoundManager.SoundType.SFX, "combogood");
 			Debug.Log("Combo: x"+chainPoints);
 		}
 		else
 		{
 			lastType = CHEMICAL.Empty;
 			chainPoints = 0;
-			Debug.Log("Combo Lost!");
+            SoundManager.Instance.PlaySoundRandom(SoundManager.SoundType.SFX, "combobad");
+            Debug.Log("Combo Lost!");
 		}
 
 		score += chainPoints * FLASK_SCORE * ( 1 + (uint) currentLevelNumber / 10);
